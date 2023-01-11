@@ -7,10 +7,12 @@
     <title>Document</title>
 </head>
  <style>
+   
      .con{
          display: grid;
          grid-template-columns: repeat(3,1fr );
          gap:20px;
+      
      } 
      .con .box{
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -26,8 +28,17 @@
         margin:100px 10vw 0px 10vw;
       }
       #price{
-         color:goldenrod
+         color:goldenrod;
       }
+      @media screen and (max-width: 800px) and (min-width:600px) {
+  .con {grid-template-columns: repeat(2,1fr);
+}
+}
+      @media screen and (max-width: 600px) {
+  .con {grid-template-columns: repeat(1,1fr);
+}
+}
+      
  </style>
 <body>
     <div class="con">
